@@ -6,7 +6,7 @@ source("getData.R")
 
 #create plot1.png file
 Sys.setlocale("LC_TIME", "English")
-
+par(mfrow = c(1, 1))
 png(file = "plot3.png", width = 480, height = 480)
 with(data, plot(DateTime, Sub_metering_1, type = "l",
                 xlab ="",
@@ -20,6 +20,6 @@ with(data, lines(DateTime, Sub_metering_3, type = "l",
                  ylab = "Energy sub metering",
                  col="blue"))
 
-legend("topright",  lty = "solid", lwd = 1,col = c("black", "red", "blue"), 
+legend("topright", lty = "solid", lwd = 1,col = c("black", "red", "blue"), 
        legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 dev.off()
