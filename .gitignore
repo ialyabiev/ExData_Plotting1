@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+*.html
+*.txt
+*.bak
+*.Rproj
+*.gitignore.bak
