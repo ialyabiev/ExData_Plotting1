@@ -5,6 +5,7 @@ datafile <- "data/household_power_consumption.txt"
 source("getData.R")
 
 #create plot1.png file
+par(mfrow = c(1, 1))
 png(file = "plot1.png", width = 480, height = 480)
 with(data, hist(Global_active_power, 
                 ylab = "Frequency",
