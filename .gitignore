@@ -4,4 +4,9 @@
 *.html
 *.txt
 *.bak
+<<<<<<< HEAD
 *.Rproj
+=======
+*.Rproj
+*.gitignore.bak
+>>>>>>> 83687359bf9ed9d17c61c5c168154b29cd0a4217
